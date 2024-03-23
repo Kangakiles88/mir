@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-pink: #ff00ff;
+  --color-navy: #0c0c24;
+  --color-light-gray: #8b8b95;
+  --color-gray: #454348;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,14 +20,36 @@
   }
 }
 
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 3, 17, 0.5);
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(
+    to right,
+    #0b0312 70% /* gradient-first */,
+    #130113 10% /* gradient-middle */,
+    #0b0312 20% /* gradient-last */
+  );
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
 }
 
 @layer utilities {
