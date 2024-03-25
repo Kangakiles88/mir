@@ -11,7 +11,7 @@ const TAB_DATA = [
     content: (
       <div className="flex flex-col justify-center">
         <div className="w-full">
-          <h2 className="w-96 text-center pt-2 font-semibold text-3xl mb-10 rounded-full bg-white text-slate-800">
+          <h2 className="w-70 md:w-96 text-center pt-2 font-semibold text-2xl md:text-3xl mb-10 rounded-full bg-white text-slate-800">
             소주, 맥주 무제한 세트
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 90분</h3>
@@ -54,7 +54,7 @@ const TAB_DATA = [
     content: (
       <div className="flex flex-col justify-center">
         <div className="w-full">
-          <h2 className="w-96 text-center pt-2 font-semibold text-3xl mb-10 rounded-full bg-white text-slate-800">
+          <h2 className="w-70 md:w-96 text-center pt-2 font-semibold text-2xl md:text-3xl mb-10 rounded-full bg-white text-slate-800">
             소주, 맥주 무제한 세트
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 120분</h3>
@@ -105,7 +105,7 @@ const Pricing = () => {
     <section className="w-full flex justify-center border-b-2 border-[#8B8B95]">
       <div className=" p-10">
         <h1
-          className="w-40 p-2 mt-10 text-4xl text-white font-bold border-b-4 border-pink"
+          className="w-40 p-2 mt-10 text-3xl md:text-4xl text-white font-bold border-b-4 border-pink"
           id="price"
         >
           가격안내
@@ -126,11 +126,11 @@ const Pricing = () => {
         </div>
         <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         <div className="animate-bounce text-center mt-20">
-          <h1 className="text-4xl font-bold mb-4 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
             9시 이전 방문시 EVENT !
           </h1>
-          <p className="text-3xl font-bold text-pink">A SET -1만</p>
-          <p className="text-3xl font-bold text-pink">B SET -2만</p>
+          <p className="text-lg md:text-3xl font-bold text-pink">A SET -1만</p>
+          <p className="text-lg md:text-3xl font-bold text-pink">B SET -2만</p>
         </div>
       </div>
     </section>

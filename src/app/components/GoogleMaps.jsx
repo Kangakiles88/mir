@@ -48,7 +48,7 @@ const GoogleMaps = () => {
 
   return (
     <div
-      className="w-[500px] h-[500px] items-center rounded-lg opacity-80 p-4 md:p-0"
+      className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] items-center rounded-lg opacity-80 p-4 md:p-0"
       ref={mapRef}
     ></div>
   );

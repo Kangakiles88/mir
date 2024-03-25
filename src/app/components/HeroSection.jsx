@@ -12,9 +12,11 @@ const HeroSection = () => {
     <section className="w-full relative border-b-2 border-[#8B8B95]">
       <div className="bg-[url('/background.png')] bg-cover bg-center pt-60 px-12 z-0">
         <div className="overlay z-10"></div>
-        <div className="relative flex flex-col flex-wrap lg:ml-20 mb-20 lg:mb-60 z-30">
-          <h2 className="text-white text-3xl mb-2 pl-2">안산 고잔 신도시</h2>
-          <h1 className="flex flex-col lg:flex-row text-white mb-2 text-6xl lg:text-6xl font-extrabold">
+        <div className="relative flex flex-col flex-wrap md:ml-20 mb-20 md:mb-60 z-30">
+          <h2 className="text-white text-lg md:text-3xl mb-2 pl-2">
+            안산 고잔 신도시
+          </h2>
+          <h1 className="flex flex-col lg:flex-row text-white mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold">
             안산 퍼블릭{" "}
             <span className="text-[var(--color-pink)]">미르노래광장</span>{" "}
             <span>
@@ -22,7 +24,7 @@ const HeroSection = () => {
             </span>
           </h1>
           <TypeAnimation
-            className="text-white pl-2"
+            className="text-white text-2xl md:text-6xl pl-2"
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "ANSAN PUBLIC KARAOKE",
@@ -30,7 +32,6 @@ const HeroSection = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "2.5em", display: "inline-block" }}
             repeat={Infinity}
           />
 

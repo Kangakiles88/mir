@@ -4,7 +4,7 @@ const GalleryCard = ({ imgUrl }) => {
   return (
     <div>
       <div
-        className="w-96 h-72 md:h-72 relative"
+        className="w-96 h-72 md:h-72 p-2 relative"
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",

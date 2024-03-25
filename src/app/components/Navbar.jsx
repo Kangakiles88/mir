@@ -26,8 +26,8 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#0A0417] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto py-4 px-4 ml-12">
+    <nav className="w-screen fixed top-0 left-0 right-0 z-40 bg-[#0A0417] bg-opacity-100">
+      <div className="flex flex-wrap items-center justify-between  py-4 px-4 md:ml-12">
         <Link href="/" className="text-white">
           <Image
             src="/Logo.png"

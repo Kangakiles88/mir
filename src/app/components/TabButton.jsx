@@ -8,7 +8,7 @@ const TabButton = ({ active, selectTab, children }) => {
   return (
     <button onClick={selectTab}>
       <p
-        className={`w-[8rem] text-3xl p-2 mr-3 font-semibold hover:text-pink ${buttonClasses}`}
+        className={`w-[8rem] text-2xl md:text-3xl p-2 mr-3 font-semibold hover:text-pink ${buttonClasses}`}
       >
         {children}
       </p>

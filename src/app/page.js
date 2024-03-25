@@ -7,7 +7,7 @@ import GallerySection from "./components/GallerySection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-screen ">
+    <main className="w-full flex flex-col min-h-screen">
       <Navbar />
       <HeroSection />
       <AboutSection />
