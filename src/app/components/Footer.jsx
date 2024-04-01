@@ -13,7 +13,8 @@ const Footer = () => {
             찾아오시는 길
           </h3>
           <p className="text-lg md:text-2xl mb-2">
-            경기도 안산시 단원구 광덕2로 185-4 301호
+            경기도 안산시 단원구 광덕2로 185-4
+            <br /> 301호
           </p>
           <p className="text-lg md:text-2xl mb-2">미르노래광장</p>
           <p className="text-lg md:text-2xl mb-2">

@@ -38,7 +38,7 @@ const galleryData = [
 
 const GallerySection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 mt-2 mb-2 ml-3 md:ml-40">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 mt-2 mb-2 ml-4 md:ml-40">
       {galleryData.map((gallery) => (
         <GalleryCard key={gallery.id} imgUrl={gallery.image} />
       ))}

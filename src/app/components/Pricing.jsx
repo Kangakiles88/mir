@@ -14,12 +14,15 @@ const TAB_DATA = [
           <h2 className="w-70 md:w-96 text-center pt-2 font-semibold text-2xl md:text-3xl mb-10 rounded-full bg-white text-slate-800">
             소주, 맥주 무제한 세트
           </h2>
-          <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 90분</h3>
+          <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 120분</h3>
           <h4 className="text-2xl font-semibold mb-3 text-white">
             가격: 전화문의
           </h4>
           <p className="text-xl text-white ">
             소주, 맥주, 안주, 음료, 봉사료 포함
+          </p>
+          <p className="animate-bounce text-xl md:text-2xl w-60 rounded-lg text-center bg-pink text-white font-bold mt-4 ">
+            양주 추가 별도 문의
           </p>
         </div>
         <div className="flex flex-col md:flex-row mt-9">
@@ -48,47 +51,47 @@ const TAB_DATA = [
       </div>
     ),
   },
-  {
-    title: "B SET",
-    id: "bset",
-    content: (
-      <div className="flex flex-col justify-center">
-        <div className="w-full">
-          <h2 className="w-70 md:w-96 text-center pt-2 font-semibold text-2xl md:text-3xl mb-10 rounded-full bg-white text-slate-800">
-            소주, 맥주 무제한 세트
-          </h2>
-          <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 120분</h3>
-          <h4 className="text-2xl font-semibold mb-3 text-white">
-            가격: 전화문의
-          </h4>
-          <p className="text-xl text-white ">양주, 안주, 음료, 봉사료 포함</p>
-        </div>
-        <div className="flex flex-col md:flex-row mt-9">
-          <Image
-            className="m-1"
-            src={"/beer.png"}
-            width={600}
-            height={600}
-            alt="양주 무제한"
-          />
-          <Image
-            className="m-1"
-            src={"/beer.png"}
-            width={600}
-            height={600}
-            alt="양주 무제한"
-          />
-          <Image
-            className="m-1"
-            src={"/beer.png"}
-            width={600}
-            height={600}
-            alt="양주 무제한"
-          />
-        </div>
-      </div>
-    ),
-  },
+  // {
+  //   title: "B SET",
+  //   id: "bset",
+  //   content: (
+  //     <div className="flex flex-col justify-center">
+  //       <div className="w-full">
+  //         <h2 className="w-70 md:w-96 text-center pt-2 font-semibold text-2xl md:text-3xl mb-10 rounded-full bg-white text-slate-800">
+  //           소주, 맥주 무제한 세트
+  //         </h2>
+  //         <h3 className="text-2xl font-semibold mb-3 text-pink">시간: 120분</h3>
+  //         <h4 className="text-2xl font-semibold mb-3 text-white">
+  //           가격: 전화문의
+  //         </h4>
+  //         <p className="text-xl text-white ">양주, 안주, 음료, 봉사료 포함</p>
+  //       </div>
+  //       <div className="flex flex-col md:flex-row mt-9">
+  //         <Image
+  //           className="m-1"
+  //           src={"/beer.png"}
+  //           width={600}
+  //           height={600}
+  //           alt="양주 무제한"
+  //         />
+  //         <Image
+  //           className="m-1"
+  //           src={"/beer.png"}
+  //           width={600}
+  //           height={600}
+  //           alt="양주 무제한"
+  //         />
+  //         <Image
+  //           className="m-1"
+  //           src={"/beer.png"}
+  //           width={600}
+  //           height={600}
+  //           alt="양주 무제한"
+  //         />
+  //       </div>
+  //     </div>
+  //   ),
+  // },
 ];
 
 const Pricing = () => {
@@ -117,12 +120,6 @@ const Pricing = () => {
           >
             A 세트
           </TabButton>
-          <TabButton
-            selectTab={() => handleTabChange("bset")}
-            active={tab === "bset"}
-          >
-            B 세트
-          </TabButton>
         </div>
         <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         <div className="animate-bounce text-center mt-20">
@@ -130,7 +127,6 @@ const Pricing = () => {
             9시 이전 방문시 EVENT !
           </h1>
           <p className="text-lg md:text-3xl font-bold text-pink">A SET -1만</p>
-          <p className="text-lg md:text-3xl font-bold text-pink">B SET -2만</p>
         </div>
       </div>
     </section>
