@@ -57,14 +57,14 @@ const HeroSection = () => {
           </div>
           <div className="flex relative text-2xl pb-24">
             <p className="text-[var(--color-pink)] text-4xl lg:text-5xl mr-4 hover:text-white">
-              <Link href="tel:010-0000-0000">
+              <Link href="tel:010-6285-5760">
                 <FiPhoneCall />
               </Link>
             </p>
             <div className="text-white font-bold">
               <p className="lg:text-2xl">예약문의</p>
               <p className="lg:text-2xl hover:text-pink ">
-                <Link href="/">010-6285-5760</Link>
+                <Link href="tel:010-6285-5760">010-6285-5760</Link>
               </p>
             </div>
           </div>
