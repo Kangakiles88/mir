@@ -64,7 +64,7 @@ const HeroSection = () => {
             <div className="text-white font-bold">
               <p className="lg:text-2xl">예약문의</p>
               <p className="lg:text-2xl hover:text-pink ">
-                <Link href="/">010-0000-0000</Link>
+                <Link href="/">010-6285-5760</Link>
               </p>
             </div>
           </div>
