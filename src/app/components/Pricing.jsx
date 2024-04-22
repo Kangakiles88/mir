@@ -28,21 +28,21 @@ const TAB_DATA = [
         <div className="flex flex-col md:flex-row mt-9">
           <Image
             className="m-1"
-            src={"/beer.png"}
+            src={"/menu1.png"}
             width={600}
             height={600}
             alt="소주 맥주 무제한"
           />
           <Image
             className="m-1"
-            src={"/beer.png"}
+            src={"/menu2.png"}
             width={600}
             height={600}
             alt="소주 맥주 무제한"
           />
           <Image
             className="m-1"
-            src={"/beer.png"}
+            src={"/menu3.png"}
             width={600}
             height={600}
             alt="소주 맥주 무제한"
