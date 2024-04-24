@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         pink: "#FF00FF",
       },
+      fontFamily: {
+        nosifer: ["Nosifer", "sans-serif"],
+      },
     },
   },
   plugins: [],

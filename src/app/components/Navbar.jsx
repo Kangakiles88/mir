@@ -13,8 +13,8 @@ const navLinks = [
     path: "#price",
   },
   {
-    title: "시설안내",
-    path: "#facility",
+    title: "미르노래광장",
+    path: "#feature",
   },
   {
     title: "위치",

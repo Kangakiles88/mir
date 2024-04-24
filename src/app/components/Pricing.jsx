@@ -105,12 +105,12 @@ const Pricing = () => {
   };
 
   return (
-    <section className="w-full flex justify-center border-b-2 border-[#8B8B95]">
+    <section
+      className="w-full flex justify-center border-b-2 border-[#8B8B95]"
+      id="price"
+    >
       <div className=" p-10">
-        <h1
-          className="w-40 p-2 mt-10 text-3xl md:text-4xl text-white font-bold border-b-4 border-pink"
-          id="price"
-        >
+        <h1 className="w-40 p-2 mt-10 text-3xl md:text-4xl text-white font-bold border-b-4 border-pink">
           가격안내
         </h1>
         <div className="flex flex-row mt-8">

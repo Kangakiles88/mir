@@ -25,6 +25,7 @@ const HeroSection = () => {
           </h1>
           <TypeAnimation
             className="text-white text-2xl md:text-6xl pl-2"
+            id="ani-text"
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "ANSAN PUBLIC KARAOKE",
