@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Disallow: /admin
+
+# Host
+Host: https://mirkaraoke.com
+
+# Sitemaps
+Sitemap: https://mirkaraoke.com/sitemap.xml
